@@ -25,12 +25,12 @@ require __DIR__.'/../includes/nav.php';
 ?>
 <div class="row justify-content-center">
 <div class="col-md-8">
-<h3>Editar Tarefa</h3>
+<h3>Edit Tarefa</h3>
 <?php foreach($errors as $e): ?><div class="alert alert-danger"><?=$e?></div><?php endforeach; ?>
 <form method="post" novalidate>
 <div class="mb-3"><label class="form-label">Título</label><input name="titulo" class="form-control" value="<?=htmlspecialchars($task['titulo'])?>" required></div>
 <div class="mb-3"><label class="form-label">Descrição</label><textarea name="descricao" class="form-control"><?=htmlspecialchars($task['descricao'])?></textarea></div>
-<button class="btn btn-primary">Salvar</button>
+<button class="btn btn-primary">Save</button>
 </form>
 </div>
 </div>
